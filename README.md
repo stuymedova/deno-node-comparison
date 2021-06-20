@@ -8,7 +8,7 @@ Main differences:
 - ES Modules support (doesn't support `require()`) **(ex. 2 & 3)**
 - No `package.json` or `node_modules`. Remote modules are stored in the system's cache, unless specified otherwise **(ex. 2 & 3)**
 - Import modules via URLs from anywhere (as opposed to only npm) **(ex. 2 & 3)**
-- File, network, and environment access need to be enabled explicitly **(ex. 4)**
+- File, network, and environment access need to be enabled explicitly (no access by default) **(ex. 4)**
 
 Ex. = Example
 
@@ -47,7 +47,7 @@ Ex. = Example
         └── webserver.js
 ```
 
-##Prerequisites
+## Prerequisites
 
 - [Deno](https://deno.land)
 - [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/)
