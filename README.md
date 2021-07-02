@@ -8,7 +8,7 @@ Main differences:
 - ES Modules support (doesn't support `require()`) **(ex. 2 & 3)**
 - No `package.json` or `node_modules`. Remote modules are stored in the system's cache, unless specified otherwise **(ex. 2 & 3)**
 - Import modules via URLs from anywhere (as opposed to only npm) **(ex. 2 & 3)**
-- File, network, and environment access need to be enabled explicitly (no access by default) **(ex. 4)**
+- File, network, and environment access need to be enabled explicitly (no access by default) **(ex. 4 & 5)**
 
 Ex. = Example
 
@@ -24,8 +24,13 @@ Ex. = Example
 │   │   └── easings.ts
 │   ├── 3_remote-modules
 │   │   └── app.js
-│   └── 4_http-server
-│       └── webserver.js
+│   ├── 4_http-server
+│   │   └── webserver.js
+│   └── 5_static-server
+│       ├── static
+│       │   └── index.html
+│       └── app.js
+│       
 └── node
     ├── 1_hello-world
     │   └── app.js
@@ -35,16 +40,24 @@ Ex. = Example
     │   ├── app.js
     │   ├── easings.js
     │   ├── easings.ts
-    │   ├── package-lock.json
-    │   └── package.json
+    │   ├── package.json
+    │   └── package-lock.json
     ├── 3_remote-modules
     │   ├── node_modules
     │   │   └── …
     │   ├── app.js
-    │   ├── package-lock.json
-    │   └── package.json
-    └── 4_http-server
-        └── webserver.js
+    │   ├── package.json
+    │   └── package-lock.json
+    ├── 4_http-server
+    │   └── webserver.js
+    └── 5_static-server
+        ├── node_modules
+        │   └── …
+        ├── static
+        │   └── index.html
+        ├── app.js
+        ├── package.json
+        └── package-lock.json
 ```
 
 ## Prerequisites
