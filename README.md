@@ -2,7 +2,7 @@
 
 ## Summary
 
-Main differences: 
+The main differences of Deno: 
 
 - Out of the box TypeScript support **(ex. 2)**
 - ES Modules support (doesn't support `require()`) **(ex. 2 & 3)**
